@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Payment - FoodieExpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="payment-section">
+
+    <div class="payment-container">
+
+        <!-- ORDER SUMMARY -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+
+            <div class="order-item">
+                <span>Pizza</span>
+                <span>₹299</span>
+            </div>
+
+            <div class="order-item total">
+                <span>Total</span>
+                <span>₹299</span>
+            </div>
+        </div>
+
+        <!-- PAYMENT BOX -->
+        <div class="payment-box">
+
+            <h2>Select Payment Method</h2>
+
+            <!-- ================= CARD FORM ================= -->
+            <div class="payment-method-box">
+                <h3>💳 Card Payment</h3>
+
+                <form action="success.html" method="get">
+                    <input type="text" placeholder="Card Holder Name" required>
+                    <input type="text" placeholder="Card Number" required>
+
+                    <div class="row">
+                        <input type="text" placeholder="MM/YY" required>
+                        <input type="text" placeholder="CVV" required>
+                    </div>
+
+                    <button type="submit" class="btn pay-btn">
+                        Pay ₹299
+                    </button>
+                </form>
+            </div>
+            <br>
+            <!-- ================= UPI FORM ================= -->
+            <div class="payment-method-box">
+                <h3>📱 UPI Payment</h3>
+
+                <form action="success.html" method="get">
+                    <input type="text" placeholder="Enter UPI ID (example@upi)" required>
+
+                    <button type="submit" class="btn pay-btn">
+                        Pay ₹299
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
